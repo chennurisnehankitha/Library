@@ -27,15 +27,7 @@
             ],
             "styles": [
               "src/styles.css"
-            ],
-            "server": "src/main.server.ts",
-            "outputMode": "server",
-            "security": {
-              "allowedHosts": []
-            },
-            "ssr": {
-              "entry": "src/server.ts"
-            }
+            ]
           },
           "configurations": {
             "production": {
@@ -63,6 +55,11 @@
         },
         "serve": {
           "builder": "@angular/build:dev-server",
+          "options": {
+            "headers": {
+              "Content-Security-Policy": "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' ws://localhost:4200 ws://127.0.0.1:4200; font-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'self'"
+            }
+          },
           "configurations": {
             "production": {
               "buildTarget": "library:build:production"
