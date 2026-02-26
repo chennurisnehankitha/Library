@@ -7,7 +7,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "learning-experience": {
+    "library": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -65,10 +65,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "learning-experience:build:production"
+              "buildTarget": "library:build:production"
             },
             "development": {
-              "buildTarget": "learning-experience:build:development"
+              "buildTarget": "library:build:development"
             }
           },
           "defaultConfiguration": "development"

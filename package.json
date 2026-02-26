@@ -1,5 +1,5 @@
 {
-  "name": "learning-experience",
+  "name": "library",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:learning-experience": "node dist/learning-experience/server/server.mjs"
+    "serve:ssr:library": "node dist/library/server/server.mjs"
   },
   "private": true,
   "packageManager": "npm@10.9.3",
